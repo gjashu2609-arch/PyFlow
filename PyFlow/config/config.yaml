@@ -1,0 +1,29 @@
+
+file_paths:
+  csv:     "data/sample.csv"
+  json:    "data/sample.json"
+  parquet: "data/taxi_data.parquet"
+
+db_credentials:
+  host:     "localhost"
+  port:     5432
+  database: "pyflow_db"
+  username: "your_user"
+  password:  "your_password"
+
+etl_settings:
+  chunk_size:    100000
+  batch_size:    1000
+  log_level:     "INFO"
+  output_format: "parquet"
+  output_dir:    "data/output"
+
+transformations:
+  handle_missing:   true
+  remove_outliers:  true
+  remove_duplicates: true
+  extract_datetime: true
+
+database:
+  path:       "data/pyflow.db"
+  table_name: "trips"
