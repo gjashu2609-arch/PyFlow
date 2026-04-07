@@ -1,0 +1,11 @@
+pandas 
+pyyaml 
+sqlalchemy 
+pytest 
+openpyxl 
+pyarrow 
+chardet 
+matplotlib 
+watchdog 
+psycopg2-binary 
+pytest
